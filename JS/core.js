@@ -26,13 +26,12 @@ let messageIndex = 0;
 let progress = 0;
 
 
-const messageBox = document.getElementById(
-    "boot-message"
-);
+const messageBox =
+document.getElementById("boot-message");
 
-const progressBar = document.getElementById(
-    "progress"
-);
+
+const progressBar =
+document.getElementById("progress");
 
 
 
@@ -43,21 +42,28 @@ function updateBoot(){
         messageBox.textContent =
         bootMessages[messageIndex];
 
-
         messageIndex++;
 
     }
 
 
-    progress += 15;
+    progress += 20;
+
+
+    if(progress > 100){
+
+        progress = 100;
+
+    }
 
 
     progressBar.style.width =
     progress + "%";
 
 
+    if(progress === 100){
 
-    if(progress >= 100){
+        clearInterval(bootTimer);
 
         finishBoot();
 
@@ -78,7 +84,16 @@ function finishBoot(){
         window.location.href =
         "desktop.html";
 
-
     },1500);
 
 }
+
+
+
+const bootTimer = setInterval(
+
+    updateBoot,
+
+    900
+
+);
