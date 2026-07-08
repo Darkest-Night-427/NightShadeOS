@@ -1,0 +1,79 @@
+#awakening {
+
+height:100vh;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+justify-content:center;
+
+background:
+
+radial-gradient(
+circle,
+#241044,
+#09020F
+);
+
+}
+
+
+#pin {
+
+font-size:30px;
+
+text-align:center;
+
+width:160px;
+
+margin:20px;
+
+background:#141020;
+
+color:white;
+
+border:1px solid #7B2EFF;
+
+border-radius:15px;
+
+}
+
+
+#keypad {
+
+display:grid;
+
+grid-template-columns:repeat(3,70px);
+
+gap:10px;
+
+}
+
+
+#keypad button {
+
+height:60px;
+
+font-size:22px;
+
+background:#141020;
+
+color:white;
+
+border:1px solid #7B2EFF;
+
+border-radius:15px;
+
+cursor:pointer;
+
+}
+
+
+#message {
+
+color:#ff99aa;
+
+}
