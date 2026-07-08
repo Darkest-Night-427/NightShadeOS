@@ -1,0 +1,68 @@
+#veil {
+
+    width:100vw;
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:
+
+    radial-gradient(
+        circle,
+        #241044,
+        #09020F
+    );
+
+}
+
+
+#veil-moon {
+
+    font-size:100px;
+
+    animation:
+
+    moonPulse 3s infinite;
+
+}
+
+
+#veil-time {
+
+    font-size:60px;
+
+    margin:20px;
+
+}
+
+
+#veil-date {
+
+    opacity:.8;
+
+}
+
+
+#unlock {
+
+    margin-top:40px;
+
+    padding:15px 30px;
+
+    border-radius:20px;
+
+    border:1px solid #7B2EFF;
+
+    background:#141020;
+
+    color:white;
+
+    cursor:pointer;
+
+}
