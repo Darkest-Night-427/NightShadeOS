@@ -4,8 +4,15 @@
 
 const moonButton =
 document.getElementById(
-"launcher-button"
+    "launcher-button"
 );
+
+
+const lunarLauncher =
+document.getElementById(
+    "lunar-launcher"
+);
+
 
 
 let launcherOpen = false;
@@ -23,15 +30,20 @@ moonButton.addEventListener(
     !launcherOpen;
 
 
-    console.log(
 
-    launcherOpen
+    if(launcherOpen){
 
-    ? "Lunar Launcher opened"
+        lunarLauncher.style.display =
+        "block";
 
-    : "Lunar Launcher closed"
+    }
 
-    );
+    else{
+
+        lunarLauncher.style.display =
+        "none";
+
+    }
 
 
 }
