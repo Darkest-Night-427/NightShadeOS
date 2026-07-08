@@ -75,21 +75,10 @@ function finishBoot(){
 
     setTimeout(()=>{
 
-        document.getElementById(
-            "boot-screen"
-        ).style.opacity = "0";
+        window.location.href =
+        "desktop.html";
 
 
-    },1000);
+    },1500);
 
 }
-
-
-
-setInterval(
-
-    updateBoot,
-
-    900
-
-);
