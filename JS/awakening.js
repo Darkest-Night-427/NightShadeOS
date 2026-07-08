@@ -48,8 +48,14 @@ else if(value==="↵"){
 
         setTimeout(()=>{
 
-            window.location.href =
-            "desktop.html";
+localStorage.setItem(
+    "nightshade_unlocked",
+    "true"
+);
+
+
+window.location.href =
+"desktop.html";
 
         },800);
 
