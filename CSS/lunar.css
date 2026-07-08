@@ -1,0 +1,83 @@
+/*
+    NightShadeOS Lunar Launcher
+    Version: v0.0.1-alpha
+*/
+
+
+#lunar-launcher {
+
+    position: absolute;
+
+    bottom: 70px;
+    left: 20px;
+
+
+    width: 320px;
+
+    padding: 20px;
+
+
+    background:
+
+    rgba(20,16,32,0.95);
+
+
+    border:
+
+    1px solid #7B2EFF;
+
+
+    border-radius: 20px;
+
+
+    box-shadow:
+
+    0 0 30px #7B2EFF;
+
+
+    display: none;
+
+}
+
+
+
+.launcher-title {
+
+    text-align: center;
+
+    font-size: 24px;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.launcher-item {
+
+    padding: 12px;
+
+    margin: 8px 0;
+
+
+    background:
+
+    rgba(123,46,255,0.15);
+
+
+    border-radius: 12px;
+
+
+    cursor: pointer;
+
+}
+
+
+
+.launcher-item:hover {
+
+    background:
+
+    rgba(123,46,255,0.35);
+
+}
