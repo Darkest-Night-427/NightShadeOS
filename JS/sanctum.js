@@ -67,6 +67,42 @@ launcher.addEventListener(
 
         console.log(
         "Opening Lunar Launcher..."
+
+            // Launch Codex
+
+const codexIcon = document.getElementById("codex-icon");
+
+codexIcon.addEventListener("dblclick", () => {
+
+    createWindow(
+
+        "📁 Codex",
+
+        `
+        <h2>Welcome to Codex</h2>
+
+        <hr>
+
+        <p>Select a folder to begin.</p>
+
+        <ul>
+
+            <li>📁 Documents</li>
+
+            <li>📁 Downloads</li>
+
+            <li>📁 Pictures</li>
+
+            <li>📁 Music</li>
+
+        </ul>
+
+        `
+
+    );
+
+});
+            
         );
 
     }
