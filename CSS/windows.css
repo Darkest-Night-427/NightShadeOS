@@ -1,1 +1,101 @@
+/* NightShadeOS Window System */
 
+
+.ns-window {
+
+    position:absolute;
+
+
+    width:500px;
+
+    height:350px;
+
+
+    background:#141020;
+
+
+    border:
+
+    1px solid #7B2EFF;
+
+
+    border-radius:15px;
+
+
+    box-shadow:
+
+    0 0 25px #7B2EFF;
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+.window-header {
+
+    height:40px;
+
+
+    display:flex;
+
+
+    justify-content:space-between;
+
+
+    align-items:center;
+
+
+    padding:0 10px;
+
+
+    background:#1e1535;
+
+
+    cursor:grab;
+
+}
+
+
+
+.window-buttons button {
+
+
+    background:none;
+
+
+    border:none;
+
+
+    color:white;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+.window-content {
+
+    padding:15px;
+
+}
+
+
+
+.maximized {
+
+
+    width:100vw !important;
+
+    height:100vh !important;
+
+    top:0 !important;
+
+    left:0 !important;
+
+}
