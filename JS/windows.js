@@ -13,7 +13,12 @@ function createWindow(title, content){
 
     const win =
     document.createElement("div");
+    
+    win.style.left =
+    (140 + windowCount * 25) + "px";
 
+    win.style.top =
+    (80 + windowCount * 25) + "px";
 
     win.className =
     "ns-window";
