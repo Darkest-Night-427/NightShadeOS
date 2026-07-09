@@ -82,7 +82,7 @@ function createWindow(title, content){
 
 
 
-function setupWindow(win){
+function setupWindow(win){makeDraggable(win);
 
 
     win.querySelector(".close")
@@ -112,7 +112,73 @@ function setupWindow(win){
             "maximized"
         );
 
+let highestZ = 100;
 
+function makeDraggable(win){
+
+    const header =
+    win.querySelector(
+        ".window-header"
+    );
+
+    let dragging = false;
+
+    let offsetX = 0;
+    let offsetY = 0;
+
+
+    header.addEventListener(
+        "mousedown",
+        (e)=>{
+
+            dragging = true;
+
+            highestZ++;
+
+            win.style.zIndex =
+            highestZ;
+
+            offsetX =
+            e.clientX -
+            win.offsetLeft;
+
+            offsetY =
+            e.clientY -
+            win.offsetTop;
+
+        }
+    );
+
+
+    document.addEventListener(
+        "mousemove",
+        (e)=>{
+
+            if(!dragging) return;
+
+            win.style.left =
+            (e.clientX - offsetX)
+            + "px";
+
+            win.style.top =
+            (e.clientY - offsetY)
+            + "px";
+
+        }
+    );
+
+
+    document.addEventListener(
+        "mouseup",
+        ()=>{
+
+            dragging = false;
+
+        }
+    );
+
+}
+        
     };
 
 }
